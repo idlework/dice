@@ -1,7 +1,7 @@
 {
   "name": "dice",
   "version": "1.0.0",
-  "description": "Regular dice roller where you set amount of dice, and amount of sides. After a roll() you have a total count returned and the tray contains the individual dices.",
+  "description": "A simple dice system in which you indicate the number of dice and how many sides the dice has. After rolling the dice the total is available but also the individual dice from the tray.",
   "main": "src/Dice.js",
   "scripts": {
     "precommit": "npm test",
