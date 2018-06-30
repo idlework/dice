@@ -9,7 +9,7 @@ module.exports = class Dice {
   roll () {
     this.clearTray()
     do {
-      const die = random.int(1, this.faces)
+      const die = this._random.int(1, this.faces)
       this._result += die
       this.tray.push(die)
     } while (this.tray.length < this.dice)
