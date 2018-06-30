@@ -1,0 +1,49 @@
+{
+  "name": "dice",
+  "version": "1.0.0",
+  "description": "Regular dice roller where you set amount of dice, and amount of sides. After a roll() you have a total count returned and the tray contains the individual dices.",
+  "main": "src/Dice.js",
+  "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "eslint": "eslint src/Dice.js",
+    "ava": "nyc ava test/Dice.js --verbose",
+    "test": "npm run eslint; npm run ava",
+    "docs": "./node_modules/documentation/bin/documentation.js build ./src/Dice.js -f md --shallow"
+  },
+  "keywords": [
+    "dice",
+    "roll",
+    "tray",
+    "random",
+    "faces",
+    "sides",
+    "chance",
+    "class",
+    "tested",
+    "game",
+    "chance"
+  ],
+  "author": "Johan Haneveld",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idlework/dice/issues"
+  },
+  "homepage": "https://github.com/idlework/dice#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idlework/dice.git"
+  },
+  "devDependencies": {
+    "ava": "^1.0.0-beta.5.1",
+    "documentation": "^8.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3",
+    "nyc": "^12.0.2"
+  }
+}
