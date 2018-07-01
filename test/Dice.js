@@ -11,9 +11,25 @@ test('check amount of dice', t => {
   t.true(dice.dice === 2)
 })
 
+test('fail minimum required dice', t => {
+  t.throws(_ => new Dice(0, 6))
+})
+
+test('fail inititialize with dice with integer', t => {
+  t.throws(_ => new Dice('2', 6))
+})
+
 test('check amount of faces', t => {
   const dice = new Dice(2, 6)
   t.true(dice.faces === 6)
+})
+
+test('fail minimum required faces', t => {
+  t.throws(_ => new Dice(2, 1))
+})
+
+test('fail inititialize with faces with integer', t => {
+  t.throws(_ => new Dice(2, '6'))
 })
 
 test('roll dice', t => {
