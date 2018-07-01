@@ -1,9 +1,7 @@
 module.exports = class Dice {
   constructor (dice, faces) {
-    this._dice = dice
-    this._faces = faces
-    this._result = 0
-    this._tray = []
+    this._validateConstructor(dice, faces)
+    this._initConstructor(dice, faces)
   }
 
   roll () {
@@ -36,6 +34,31 @@ module.exports = class Dice {
 
   get tray () {
     return this._tray
+  }
+
+  _validateConstructor (dice, faces) {
+    if (!Number.isInteger(dice)) {
+      throw new Error('The number of dice has to be an integer.')
+    }
+
+    if (dice < 1) {
+      throw new Error('The number of dice has to be greater than zero.')
+    }
+
+    if (!Number.isInteger(faces)) {
+      throw new Error('Faces should be an integer')
+    }
+
+    if (faces < 2) {
+      throw new Error('The number of faces has to be greater than one.')
+    }
+  }
+
+  _initConstructor (dice, faces) {
+    this._dice = dice
+    this._faces = faces
+    this._result = 0
+    this._tray = []
   }
 
   _randomInt (min, max) {
