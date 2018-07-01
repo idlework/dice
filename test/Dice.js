@@ -13,7 +13,7 @@ test('check amount of dice', t => {
 
 test('check amount of faces', t => {
   const dice = new Dice(2, 6)
-  t.true(dice.dice === 2)
+  t.true(dice.faces === 6)
 })
 
 test('roll dice', t => {
