@@ -1,5 +1,5 @@
 {
-  "name": "dice",
+  "name": "game-dice",
   "version": "1.0.0",
   "description": "A simple dice system in which you indicate the number of dice and how many sides the dice has. After rolling the dice the total is available but also the individual dice from the tray.",
   "main": "src/Dice.js",
@@ -22,17 +22,19 @@
     "class",
     "tested",
     "game",
-    "chance"
+    "chance",
+    "boardgame",
+    "board"
   ],
   "author": "Johan Haneveld",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/idlework/dice/issues"
+    "url": "https://github.com/idlework/game-dice/issues"
   },
-  "homepage": "https://github.com/idlework/dice#readme",
+  "homepage": "https://github.com/idlework/game-dice#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idlework/dice.git"
+    "url": "git+https://github.com/idlework/game-dice.git"
   },
   "devDependencies": {
     "ava": "^1.0.0-beta.5.1",

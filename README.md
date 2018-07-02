@@ -7,7 +7,7 @@ $ npm i dice-js --save
 
 ## Usage
 ```javascript
-import Dice from 'dice-js'
+import Dice from 'game-dice'
 
 export default class Map extends Dice {
   constructor (dice, faces) {
@@ -19,7 +19,7 @@ export default class Map extends Dice {
 *or*
 
 ```javascript
-import Dice from 'dice-js'
+import Dice from 'game-dice'
 
 const dice = new Dice(2, 6)
 ```
@@ -27,7 +27,7 @@ const dice = new Dice(2, 6)
 *or*
 
 ```javascript
-const dice = require("dice-js")
+const dice = require("game-dice")
 
 const dice = new Array2D(2, 6)
 ```
