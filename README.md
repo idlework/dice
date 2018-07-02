@@ -2,12 +2,12 @@
 
 ## Installation
 ```shell
-$ npm i dice-js --save
+$ npm i @idlework/dice --save
 ```
 
 ## Usage
 ```javascript
-import Dice from 'game-dice'
+import Dice from 'dice'
 
 export default class Map extends Dice {
   constructor (dice, faces) {
@@ -19,7 +19,7 @@ export default class Map extends Dice {
 *or*
 
 ```javascript
-import Dice from 'game-dice'
+import Dice from 'dice'
 
 const dice = new Dice(2, 6)
 ```
@@ -27,9 +27,8 @@ const dice = new Dice(2, 6)
 *or*
 
 ```javascript
-const dice = require("game-dice")
-
-const dice = new Array2D(2, 6)
+const Dice = require('dice')
+const dice = new Dice(2, 6)
 ```
 
 ## API
@@ -47,7 +46,7 @@ Intitialize Dice class.
 
 Roll the dice.
 
-Returns **[Array][2]** Returns the total of all dice.
+Returns **[Number][1]** Returns the total of all dice.
 
 ### clearTray
 
